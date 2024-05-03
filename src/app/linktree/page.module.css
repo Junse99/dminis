@@ -1,11 +1,11 @@
 .body__container {
   background-color: #d7bce1;
+  background-color: var(--color-secundary);
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2rem;
-  font-family: "Lato", sans-serif;
-  font-weight: 100;
+  padding: 5rem 2rem 2rem;
+  font-weight: 400;
   font-style: normal;
   position: relative;
   overflow: hidden;
@@ -38,6 +38,7 @@
 .heading {
   margin: 1rem 0;
   color: #4B1870;
+  font-weight: bold;
 }
 
 .parrafos {

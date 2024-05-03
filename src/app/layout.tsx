@@ -1,9 +1,24 @@
 import type { Metadata } from "next";
-import { Work_Sans, Lato } from 'next/font/google';
-import { Inter } from "next/font/google";
+import { Work_Sans, Lato, Chewy } from 'next/font/google';
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const chewy = Chewy({
+  subsets: ['latin'],
+  weight: ['400'],
+  variable: '--font-chewy',
+  display: 'swap',
+});
+const lato = Lato({
+  subsets: ['latin'],
+  weight: ['100', '300', '400'],
+  variable: '--font-lato',
+  display: 'swap',
+});
+const workSans = Work_Sans({
+  subsets: ['latin'],
+  variable: '--font-work-sans', 
+  display: 'swap',
+});
 
 export const metadata: Metadata = {
   title: "D'minis",
@@ -17,7 +32,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${chewy.variable} ${workSans.variable} ${lato.variable} ${lato.className}`}>{children}</body>
     </html>
   );
 }

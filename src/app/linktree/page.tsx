@@ -1,11 +1,15 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import { getPLinkPageContent } from "./page.service";
+import Header from "@/components/molecules/header/header";
 
 export default async function LinkTree() {
   const {title, subtittle, backgroundImage, image, linklistCollection: {items}} = await getPLinkPageContent('page-links');
 
+
   return (
+    <>
+    <Header />
     <main className={styles.body__container}>
       <Image src={image.mobile.url} alt={image.description} height={image.mobile.height} width={image.mobile.width} className={styles['img-logo']} />
       <h1 className={styles.heading}>{title}</h1>
@@ -25,5 +29,6 @@ export default async function LinkTree() {
         }
       </ul>
     </main>
+    </>
   );
 }
