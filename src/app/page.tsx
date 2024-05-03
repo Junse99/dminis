@@ -6,7 +6,7 @@ import type { EmblaOptionsType } from 'embla-carousel'
 import { getHomeCarousel } from "@/components/molecules/home-carousel/get-home-carousel.service";
 import ProductsSection from "@/components/molecules/products-section/products-section";
 
-export const Home = async () => {
+export default async function Home() {
 
   const { code, listCollection: { items } } = await getHomeCarousel('home-banner-carousel');
 
@@ -21,5 +21,3 @@ export const Home = async () => {
     </main></>
   );
 }
-
-export default Home
