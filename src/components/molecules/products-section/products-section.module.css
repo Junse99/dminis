@@ -52,7 +52,7 @@
 
 .product-image {
   height: auto;
-  width: 100%;
+  width: auto;
   max-height: 90px;
   transition: all 1s ease;
   pointer-events: none;
