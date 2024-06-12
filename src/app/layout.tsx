@@ -29,6 +29,21 @@ export const metadata: Metadata = {
     description: 'La tentación hecha donna',
     creator: '@dminiss',
     images: ['https://images.ctfassets.net/96w0kkla1kl6/mHOhn7PXzTGsQk8TFWcav/7ea0b44e420aaca554a8982b26af5ad2/Twitter_Card.png'],
+  },
+  openGraph: {
+    title: "D'minis",
+    description: 'La tentación hecha donna',
+    url: 'https://dminis.vercel.app/',
+    siteName: "D'minis",
+    images: [
+      {
+        url: 'https://images.ctfassets.net/96w0kkla1kl6/mHOhn7PXzTGsQk8TFWcav/7ea0b44e420aaca554a8982b26af5ad2/Twitter_Card.png', 
+        width: 800,
+        height: 600,
+      },
+    ],
+    locale: 'es_ES',
+    type: 'website',
   }
 };
 
