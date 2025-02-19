@@ -16,6 +16,9 @@
   --color-primary: #4B1870;
   --color-secundary: #ECD4ED;
   --color-white: #FFF;
+  --color-primary: #7e29bb;
+  --color-secundary: #E5DAFA;
+  --color-white: #FFF;
 
   /*Breakpoints*/
   --breakpoint-mobile: 375px;
